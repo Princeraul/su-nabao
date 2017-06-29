@@ -1,0 +1,37 @@
+@charset 'utf-8';
+@import 'base/normalize';
+@import 'helpers/fontColor';
+@import 'helpers/var';
+@import 'components/backgroundtransparent';
+@import 'components/clearfix';
+@import 'layout/header';
+@import 'layout/navbar-float';
+@import 'layout/footer';
+@import 'sprite/sprites';
+@import 'views/index';
+@import 'views/list';
+@import 'views/product';
+@import 'views/serve';
+@import 'vendors/style';
+
+
+body {
+	min-width: 1200px;
+	color: $base-text-color;
+	font-family: 'Microsoft yahei';
+}
+
+.icon {
+	display: inline-block;
+}
+
+a {
+	transition: all 0.5s;
+}
+
+.base-box {
+	@extend %clearfix;
+
+	width: 1200px;
+	margin: 0 auto;
+}

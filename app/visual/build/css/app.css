@@ -1,0 +1,754 @@
+@charset "UTF-8";
+/*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
+/**
+ * 1. Change the default font family in all browsers (opinionated).
+ * 2. Prevent adjustments of font size after orientation changes in IE and iOS.
+ */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+body {
+  margin: 0; }
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ * 2. Add the correct display in IE.
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+  /* 1 */
+  display: block; }
+
+/**
+ * Add the correct display in IE 9-.
+ */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block; }
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline; }
+
+/**
+ * Add the correct display in IE 10-.
+ * 1. Add the correct display in IE.
+ */
+template,
+[hidden] {
+  display: none; }
+
+/* Links
+   ========================================================================== */
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+a {
+  background-color: transparent;
+  /* 1 */
+  -webkit-text-decoration-skip: objects;
+  /* 2 */ }
+
+/**
+ * Remove the outline on focused links when they are also active or hovered
+ * in all browsers (opinionated).
+ */
+a:active,
+a:hover {
+  outline-width: 0; }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * 1. Remove the bottom border in Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */ }
+
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+b,
+strong {
+  font-weight: inherit; }
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder; }
+
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+dfn {
+  font-style: italic; }
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/**
+ * Add the correct background and color in IE 9-.
+ */
+mark {
+  background-color: #ff0;
+  color: #000; }
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -0.25em; }
+
+sup {
+  top: -0.5em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+img {
+  border-style: none; }
+
+/**
+ * Hide the overflow in IE.
+ */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/**
+ * Add the correct margin in IE 8.
+ */
+figure {
+  margin: 1em 40px; }
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */ }
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change font properties to `inherit` in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  /* 1 */
+  margin: 0;
+  /* 2 */ }
+
+/**
+ * Restore the font weight unset by the previous rule.
+ */
+optgroup {
+  font-weight: bold; }
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible; }
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none; }
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */ }
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0; }
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText; }
+
+/**
+ * Change the border, margin, and padding in all browsers (opinionated).
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */ }
+
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+textarea {
+  overflow: auto; }
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+[type="checkbox"],
+[type="radio"] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */ }
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on OS X.
+ */
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * Correct the text style of placeholders in Chrome, Edge, and Safari.
+ */
+::-webkit-input-placeholder {
+  color: inherit;
+  opacity: 0.54; }
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */ }
+
+#stars {
+  width: 1px;
+  height: 1px;
+  background: transparent;
+  -webkit-box-shadow: 1903px 244px #FFF , 1116px 1260px #FFF , 1315px 1050px #FFF , 1818px 1041px #FFF , 1962px 66px #FFF , 172px 490px #FFF , 839px 280px #FFF , 1608px 1277px #FFF , 803px 776px #FFF , 372px 1789px #FFF , 333px 172px #FFF , 1740px 399px #FFF , 1794px 348px #FFF , 1902px 296px #FFF , 1118px 543px #FFF , 1802px 1554px #FFF , 1885px 1033px #FFF , 1893px 525px #FFF , 1629px 1254px #FFF , 1869px 769px #FFF , 425px 1287px #FFF , 1605px 1743px #FFF , 994px 1255px #FFF , 595px 1773px #FFF , 965px 1548px #FFF , 935px 1468px #FFF , 1475px 1864px #FFF , 1211px 1963px #FFF , 1038px 75px #FFF , 696px 1890px #FFF , 1310px 1279px #FFF , 524px 1305px #FFF , 297px 440px #FFF , 117px 1856px #FFF , 1088px 240px #FFF , 1819px 1710px #FFF , 239px 44px #FFF , 1773px 121px #FFF , 967px 479px #FFF , 1156px 1793px #FFF , 381px 1147px #FFF , 524px 552px #FFF , 1971px 275px #FFF , 1110px 1169px #FFF , 568px 665px #FFF , 612px 845px #FFF , 1481px 850px #FFF , 276px 1440px #FFF , 1686px 700px #FFF , 772px 889px #FFF , 620px 107px #FFF , 200px 637px #FFF , 1195px 1429px #FFF , 1741px 1337px #FFF , 1302px 824px #FFF , 465px 1547px #FFF , 1461px 496px #FFF , 16px 880px #FFF , 760px 163px #FFF , 1713px 1354px #FFF , 1012px 833px #FFF , 191px 754px #FFF , 760px 22px #FFF , 1460px 293px #FFF , 220px 1281px #FFF , 1863px 421px #FFF , 1865px 765px #FFF , 1913px 897px #FFF , 1017px 401px #FFF , 1056px 1219px #FFF , 112px 218px #FFF , 410px 1736px #FFF , 1255px 100px #FFF , 1624px 106px #FFF , 142px 423px #FFF , 138px 1093px #FFF , 1603px 1431px #FFF , 1790px 1303px #FFF , 160px 666px #FFF , 1238px 1962px #FFF , 731px 448px #FFF , 71px 1205px #FFF , 308px 454px #FFF , 802px 852px #FFF , 1198px 1064px #FFF , 519px 454px #FFF , 227px 791px #FFF , 353px 1039px #FFF , 1613px 1657px #FFF , 1887px 1133px #FFF , 415px 679px #FFF , 1533px 1121px #FFF , 771px 1597px #FFF , 137px 1716px #FFF , 1136px 1102px #FFF , 188px 501px #FFF , 1529px 1439px #FFF , 377px 676px #FFF , 702px 1815px #FFF , 1779px 476px #FFF , 1918px 991px #FFF , 1454px 1693px #FFF , 1908px 1617px #FFF , 18px 1128px #FFF , 1771px 1576px #FFF , 1720px 636px #FFF , 1406px 1829px #FFF , 595px 200px #FFF , 1434px 1875px #FFF , 1884px 761px #FFF , 924px 825px #FFF , 1834px 89px #FFF , 1888px 1480px #FFF , 672px 217px #FFF , 602px 781px #FFF , 1395px 138px #FFF , 450px 1142px #FFF , 453px 55px #FFF , 1439px 1362px #FFF , 1607px 183px #FFF , 48px 758px #FFF , 85px 440px #FFF , 99px 1587px #FFF , 828px 175px #FFF , 1893px 283px #FFF , 1282px 1025px #FFF , 955px 549px #FFF , 556px 1927px #FFF , 927px 1370px #FFF , 417px 736px #FFF , 1348px 158px #FFF , 1591px 633px #FFF , 570px 1609px #FFF , 1449px 55px #FFF , 1837px 1115px #FFF , 1638px 763px #FFF , 1283px 651px #FFF , 16px 1607px #FFF , 998px 729px #FFF , 1805px 21px #FFF , 168px 1074px #FFF , 1460px 1820px #FFF , 1584px 1166px #FFF , 724px 1813px #FFF , 1697px 1092px #FFF , 1218px 109px #FFF , 730px 1403px #FFF , 97px 1757px #FFF , 786px 488px #FFF , 1813px 122px #FFF , 11px 1819px #FFF , 530px 1127px #FFF , 1854px 1153px #FFF , 1041px 778px #FFF , 656px 980px #FFF , 415px 57px #FFF , 1644px 59px #FFF , 1271px 1214px #FFF , 1645px 1050px #FFF , 1494px 1594px #FFF , 1310px 160px #FFF , 1263px 1288px #FFF , 1991px 1075px #FFF , 656px 1779px #FFF , 1102px 1538px #FFF , 550px 1483px #FFF , 72px 854px #FFF , 1862px 1652px #FFF , 297px 1047px #FFF , 496px 1228px #FFF , 1908px 344px #FFF , 1804px 1354px #FFF , 457px 1015px #FFF , 1857px 1705px #FFF , 1604px 1300px #FFF , 760px 1765px #FFF , 398px 1613px #FFF , 1726px 164px #FFF , 1367px 1925px #FFF , 1952px 572px #FFF , 1243px 276px #FFF , 1174px 1898px #FFF , 900px 208px #FFF , 60px 1582px #FFF , 526px 985px #FFF , 513px 1857px #FFF , 1724px 620px #FFF , 1829px 1901px #FFF , 413px 1833px #FFF , 290px 389px #FFF , 748px 341px #FFF , 916px 1284px #FFF , 1364px 1130px #FFF , 776px 64px #FFF , 681px 74px #FFF , 1094px 1327px #FFF , 101px 1185px #FFF , 1782px 544px #FFF , 799px 1751px #FFF , 410px 1650px #FFF , 1537px 1522px #FFF , 1465px 1082px #FFF , 473px 1342px #FFF , 1782px 1406px #FFF , 1211px 884px #FFF , 1187px 1583px #FFF , 1323px 41px #FFF , 1890px 564px #FFF;
+          box-shadow: 1903px 244px #FFF , 1116px 1260px #FFF , 1315px 1050px #FFF , 1818px 1041px #FFF , 1962px 66px #FFF , 172px 490px #FFF , 839px 280px #FFF , 1608px 1277px #FFF , 803px 776px #FFF , 372px 1789px #FFF , 333px 172px #FFF , 1740px 399px #FFF , 1794px 348px #FFF , 1902px 296px #FFF , 1118px 543px #FFF , 1802px 1554px #FFF , 1885px 1033px #FFF , 1893px 525px #FFF , 1629px 1254px #FFF , 1869px 769px #FFF , 425px 1287px #FFF , 1605px 1743px #FFF , 994px 1255px #FFF , 595px 1773px #FFF , 965px 1548px #FFF , 935px 1468px #FFF , 1475px 1864px #FFF , 1211px 1963px #FFF , 1038px 75px #FFF , 696px 1890px #FFF , 1310px 1279px #FFF , 524px 1305px #FFF , 297px 440px #FFF , 117px 1856px #FFF , 1088px 240px #FFF , 1819px 1710px #FFF , 239px 44px #FFF , 1773px 121px #FFF , 967px 479px #FFF , 1156px 1793px #FFF , 381px 1147px #FFF , 524px 552px #FFF , 1971px 275px #FFF , 1110px 1169px #FFF , 568px 665px #FFF , 612px 845px #FFF , 1481px 850px #FFF , 276px 1440px #FFF , 1686px 700px #FFF , 772px 889px #FFF , 620px 107px #FFF , 200px 637px #FFF , 1195px 1429px #FFF , 1741px 1337px #FFF , 1302px 824px #FFF , 465px 1547px #FFF , 1461px 496px #FFF , 16px 880px #FFF , 760px 163px #FFF , 1713px 1354px #FFF , 1012px 833px #FFF , 191px 754px #FFF , 760px 22px #FFF , 1460px 293px #FFF , 220px 1281px #FFF , 1863px 421px #FFF , 1865px 765px #FFF , 1913px 897px #FFF , 1017px 401px #FFF , 1056px 1219px #FFF , 112px 218px #FFF , 410px 1736px #FFF , 1255px 100px #FFF , 1624px 106px #FFF , 142px 423px #FFF , 138px 1093px #FFF , 1603px 1431px #FFF , 1790px 1303px #FFF , 160px 666px #FFF , 1238px 1962px #FFF , 731px 448px #FFF , 71px 1205px #FFF , 308px 454px #FFF , 802px 852px #FFF , 1198px 1064px #FFF , 519px 454px #FFF , 227px 791px #FFF , 353px 1039px #FFF , 1613px 1657px #FFF , 1887px 1133px #FFF , 415px 679px #FFF , 1533px 1121px #FFF , 771px 1597px #FFF , 137px 1716px #FFF , 1136px 1102px #FFF , 188px 501px #FFF , 1529px 1439px #FFF , 377px 676px #FFF , 702px 1815px #FFF , 1779px 476px #FFF , 1918px 991px #FFF , 1454px 1693px #FFF , 1908px 1617px #FFF , 18px 1128px #FFF , 1771px 1576px #FFF , 1720px 636px #FFF , 1406px 1829px #FFF , 595px 200px #FFF , 1434px 1875px #FFF , 1884px 761px #FFF , 924px 825px #FFF , 1834px 89px #FFF , 1888px 1480px #FFF , 672px 217px #FFF , 602px 781px #FFF , 1395px 138px #FFF , 450px 1142px #FFF , 453px 55px #FFF , 1439px 1362px #FFF , 1607px 183px #FFF , 48px 758px #FFF , 85px 440px #FFF , 99px 1587px #FFF , 828px 175px #FFF , 1893px 283px #FFF , 1282px 1025px #FFF , 955px 549px #FFF , 556px 1927px #FFF , 927px 1370px #FFF , 417px 736px #FFF , 1348px 158px #FFF , 1591px 633px #FFF , 570px 1609px #FFF , 1449px 55px #FFF , 1837px 1115px #FFF , 1638px 763px #FFF , 1283px 651px #FFF , 16px 1607px #FFF , 998px 729px #FFF , 1805px 21px #FFF , 168px 1074px #FFF , 1460px 1820px #FFF , 1584px 1166px #FFF , 724px 1813px #FFF , 1697px 1092px #FFF , 1218px 109px #FFF , 730px 1403px #FFF , 97px 1757px #FFF , 786px 488px #FFF , 1813px 122px #FFF , 11px 1819px #FFF , 530px 1127px #FFF , 1854px 1153px #FFF , 1041px 778px #FFF , 656px 980px #FFF , 415px 57px #FFF , 1644px 59px #FFF , 1271px 1214px #FFF , 1645px 1050px #FFF , 1494px 1594px #FFF , 1310px 160px #FFF , 1263px 1288px #FFF , 1991px 1075px #FFF , 656px 1779px #FFF , 1102px 1538px #FFF , 550px 1483px #FFF , 72px 854px #FFF , 1862px 1652px #FFF , 297px 1047px #FFF , 496px 1228px #FFF , 1908px 344px #FFF , 1804px 1354px #FFF , 457px 1015px #FFF , 1857px 1705px #FFF , 1604px 1300px #FFF , 760px 1765px #FFF , 398px 1613px #FFF , 1726px 164px #FFF , 1367px 1925px #FFF , 1952px 572px #FFF , 1243px 276px #FFF , 1174px 1898px #FFF , 900px 208px #FFF , 60px 1582px #FFF , 526px 985px #FFF , 513px 1857px #FFF , 1724px 620px #FFF , 1829px 1901px #FFF , 413px 1833px #FFF , 290px 389px #FFF , 748px 341px #FFF , 916px 1284px #FFF , 1364px 1130px #FFF , 776px 64px #FFF , 681px 74px #FFF , 1094px 1327px #FFF , 101px 1185px #FFF , 1782px 544px #FFF , 799px 1751px #FFF , 410px 1650px #FFF , 1537px 1522px #FFF , 1465px 1082px #FFF , 473px 1342px #FFF , 1782px 1406px #FFF , 1211px 884px #FFF , 1187px 1583px #FFF , 1323px 41px #FFF , 1890px 564px #FFF;
+  -webkit-animation: animStar 50s linear infinite;
+          animation: animStar 50s linear infinite; }
+
+#stars:after {
+  content: " ";
+  position: absolute;
+  top: 2000px;
+  width: 1px;
+  height: 1px;
+  background: transparent;
+  -webkit-box-shadow: 1903px 244px #FFF , 1116px 1260px #FFF , 1315px 1050px #FFF , 1818px 1041px #FFF , 1962px 66px #FFF , 172px 490px #FFF , 839px 280px #FFF , 1608px 1277px #FFF , 803px 776px #FFF , 372px 1789px #FFF , 333px 172px #FFF , 1740px 399px #FFF , 1794px 348px #FFF , 1902px 296px #FFF , 1118px 543px #FFF , 1802px 1554px #FFF , 1885px 1033px #FFF , 1893px 525px #FFF , 1629px 1254px #FFF , 1869px 769px #FFF , 425px 1287px #FFF , 1605px 1743px #FFF , 994px 1255px #FFF , 595px 1773px #FFF , 965px 1548px #FFF , 935px 1468px #FFF , 1475px 1864px #FFF , 1211px 1963px #FFF , 1038px 75px #FFF , 696px 1890px #FFF , 1310px 1279px #FFF , 524px 1305px #FFF , 297px 440px #FFF , 117px 1856px #FFF , 1088px 240px #FFF , 1819px 1710px #FFF , 239px 44px #FFF , 1773px 121px #FFF , 967px 479px #FFF , 1156px 1793px #FFF , 381px 1147px #FFF , 524px 552px #FFF , 1971px 275px #FFF , 1110px 1169px #FFF , 568px 665px #FFF , 612px 845px #FFF , 1481px 850px #FFF , 276px 1440px #FFF , 1686px 700px #FFF , 772px 889px #FFF , 620px 107px #FFF , 200px 637px #FFF , 1195px 1429px #FFF , 1741px 1337px #FFF , 1302px 824px #FFF , 465px 1547px #FFF , 1461px 496px #FFF , 16px 880px #FFF , 760px 163px #FFF , 1713px 1354px #FFF , 1012px 833px #FFF , 191px 754px #FFF , 760px 22px #FFF , 1460px 293px #FFF , 220px 1281px #FFF , 1863px 421px #FFF , 1865px 765px #FFF;
+          box-shadow: 1903px 244px #FFF , 1116px 1260px #FFF , 1315px 1050px #FFF , 1818px 1041px #FFF , 1962px 66px #FFF , 172px 490px #FFF , 839px 280px #FFF , 1608px 1277px #FFF , 803px 776px #FFF , 372px 1789px #FFF , 333px 172px #FFF , 1740px 399px #FFF , 1794px 348px #FFF , 1902px 296px #FFF , 1118px 543px #FFF , 1802px 1554px #FFF , 1885px 1033px #FFF , 1893px 525px #FFF , 1629px 1254px #FFF , 1869px 769px #FFF , 425px 1287px #FFF , 1605px 1743px #FFF , 994px 1255px #FFF , 595px 1773px #FFF , 965px 1548px #FFF , 935px 1468px #FFF , 1475px 1864px #FFF , 1211px 1963px #FFF , 1038px 75px #FFF , 696px 1890px #FFF , 1310px 1279px #FFF , 524px 1305px #FFF , 297px 440px #FFF , 117px 1856px #FFF , 1088px 240px #FFF , 1819px 1710px #FFF , 239px 44px #FFF , 1773px 121px #FFF , 967px 479px #FFF , 1156px 1793px #FFF , 381px 1147px #FFF , 524px 552px #FFF , 1971px 275px #FFF , 1110px 1169px #FFF , 568px 665px #FFF , 612px 845px #FFF , 1481px 850px #FFF , 276px 1440px #FFF , 1686px 700px #FFF , 772px 889px #FFF , 620px 107px #FFF , 200px 637px #FFF , 1195px 1429px #FFF , 1741px 1337px #FFF , 1302px 824px #FFF , 465px 1547px #FFF , 1461px 496px #FFF , 16px 880px #FFF , 760px 163px #FFF , 1713px 1354px #FFF , 1012px 833px #FFF , 191px 754px #FFF , 760px 22px #FFF , 1460px 293px #FFF , 220px 1281px #FFF , 1863px 421px #FFF , 1865px 765px #FFF; }
+
+#stars3 {
+  width: 2px;
+  height: 2px;
+  background: transparent;
+  -webkit-box-shadow: 63px 1258px #FFF , 411px 1651px #FFF , 1164px 1904px #FFF , 265px 234px #FFF , 948px 598px #FFF , 530px 156px #FFF , 833px 807px #FFF , 1263px 1363px #FFF , 1947px 1341px #FFF , 1934px 1493px #FFF , 1326px 1723px #FFF , 1139px 1093px #FFF , 873px 614px #FFF , 516px 683px #FFF , 824px 1509px #FFF , 1005px 1212px #FFF , 1522px 1489px #FFF , 109px 200px #FFF , 636px 997px #FFF , 654px 550px #FFF , 569px 564px #FFF , 472px 422px #FFF , 484px 145px #FFF , 771px 967px #FFF , 869px 1244px #FFF , 893px 585px #FFF , 151px 810px #FFF , 1637px 1645px #FFF , 1521px 1028px #FFF , 157px 13px #FFF;
+          box-shadow: 63px 1258px #FFF , 411px 1651px #FFF , 1164px 1904px #FFF , 265px 234px #FFF , 948px 598px #FFF , 530px 156px #FFF , 833px 807px #FFF , 1263px 1363px #FFF , 1947px 1341px #FFF , 1934px 1493px #FFF , 1326px 1723px #FFF , 1139px 1093px #FFF , 873px 614px #FFF , 516px 683px #FFF , 824px 1509px #FFF , 1005px 1212px #FFF , 1522px 1489px #FFF , 109px 200px #FFF , 636px 997px #FFF , 654px 550px #FFF , 569px 564px #FFF , 472px 422px #FFF , 484px 145px #FFF , 771px 967px #FFF , 869px 1244px #FFF , 893px 585px #FFF , 151px 810px #FFF , 1637px 1645px #FFF , 1521px 1028px #FFF , 157px 13px #FFF;
+  -webkit-animation: animStar 150s linear infinite;
+          animation: animStar 150s linear infinite; }
+
+@-webkit-keyframes animStar {
+  from {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px); }
+  to {
+    -webkit-transform: translateY(-2000px);
+            transform: translateY(-2000px); } }
+
+@keyframes animStar {
+  from {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px); }
+  to {
+    -webkit-transform: translateY(-2000px);
+            transform: translateY(-2000px); } }
+
+html {
+  height: 100%; }
+
+body {
+  height: 100%; }
+
+.outbg {
+  height: 100%;
+  background: -webkit-linear-gradient(top, #202a51 0%, #111235 100%);
+  background-size: 90% 105%, 20% 100%; }
+
+.innerbg {
+  height: 100%;
+  background-image: url("../images/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden; }
+
+.animate-element {
+  position: absolute;
+  top: 19%;
+  left: 0;
+  width: 100%; }
+
+.logo {
+  width: 232px;
+  height: 207px;
+  margin-top: -60px;
+  margin-left: 50%;
+  background: url("../images/logo.png") top center no-repeat;
+  -webkit-transform: translate3d(-50%, 0, 0);
+          transform: translate3d(-50%, 0, 0);
+  opacity: 0;
+  -webkit-animation: logoAnimate 700ms 600ms forwards;
+          animation: logoAnimate 700ms 600ms forwards; }
+
+@-webkit-keyframes logoAnimate {
+  to {
+    margin-top: 0;
+    opacity: 1; } }
+
+@keyframes logoAnimate {
+  to {
+    margin-top: 0;
+    opacity: 1; } }
+
+.logotxt {
+  width: 1027px;
+  height: 72px;
+  margin-left: 50%;
+  margin-top: 40px;
+  background: url("../images/txt.png") no-repeat;
+  will-change: transform;
+  -webkit-transform: translate3d(-50%, 30px, 0);
+          transform: translate3d(-50%, 30px, 0);
+  opacity: 0;
+  -webkit-animation: logotxtAnimate 1.5s 1.3s forwards;
+          animation: logotxtAnimate 1.5s 1.3s forwards; }
+
+@-webkit-keyframes logotxtAnimate {
+  to {
+    -webkit-transform: translate3d(-50%, 0, 0);
+            transform: translate3d(-50%, 0, 0);
+    opacity: 1; } }
+
+@keyframes logotxtAnimate {
+  to {
+    -webkit-transform: translate3d(-50%, 0, 0);
+            transform: translate3d(-50%, 0, 0);
+    opacity: 1; } }
+
+.btnPlay {
+  display: block;
+  width: 254px;
+  eight: 70px;
+  padding: 0 70px;
+  margin-top: 140px;
+  margin-left: 50%;
+  border: 1px solid #2297f1;
+  border-radius: 20px;
+  color: #2297f1;
+  font-family: 'microsoft yahei';
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.7);
+  font-size: 34px;
+  text-align: center;
+  text-decoration: none;
+  line-height: 65px;
+  letter-spacing: 1.3px;
+  opacity: 0;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+  -webkit-transform: translate3d(-50%, 0, 0);
+          transform: translate3d(-50%, 0, 0);
+  -webkit-animation: btnPlayAnimate 1.3s 2.8s forwards;
+          animation: btnPlayAnimate 1.3s 2.8s forwards; }
+  .btnPlay:hover {
+    color: #fff;
+    border: 1px solid transparent; }
+    .btnPlay:hover::before {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0); }
+  .btnPlay::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #2297f1;
+    color: #fff;
+    border-radius: 20px;
+    z-index: -1;
+    opacity: 0;
+    -webkit-transform: scale3d(0.5, 1, 1);
+            transform: scale3d(0.5, 1, 1);
+    -webkit-transition: opacity 0.4s, -webkit-transform 0.4s;
+    transition: opacity 0.4s, -webkit-transform 0.4s;
+    transition: transform 0.4s, opacity 0.4s;
+    transition: transform 0.4s, opacity 0.4s, -webkit-transform 0.4s;
+    -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+    transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1); }
+  .btnPlay::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    -webkit-animation: btnPlayAnimateAfter 1500ms 3.2s infinite;
+            animation: btnPlayAnimateAfter 1500ms 3.2s infinite; }
+
+@-webkit-keyframes btnPlayAnimateAfter {
+  50% {
+    -webkit-box-shadow: 0 0 15px #2297f1;
+            box-shadow: 0 0 15px #2297f1; }
+  100% {
+    -webkit-box-shadow: none;
+            box-shadow: none; } }
+
+@keyframes btnPlayAnimateAfter {
+  50% {
+    -webkit-box-shadow: 0 0 15px #2297f1;
+            box-shadow: 0 0 15px #2297f1; }
+  100% {
+    -webkit-box-shadow: none;
+            box-shadow: none; } }
+
+@-webkit-keyframes btnPlayAnimate {
+  to {
+    opacity: 1;
+    margin-top: 70px; } }
+
+@keyframes btnPlayAnimate {
+  to {
+    opacity: 1;
+    margin-top: 70px; } }
+
+.mapV {
+  position: relative;
+  width: 100%;
+  height: 100%; }
+
+.data-logo {
+  position: absolute;
+  z-index: 1;
+  top: 25px;
+  left: 25px;
+  opacity: 0;
+  width: 306px;
+  height: 72px;
+  background: url("../images/logo2.png") no-repeat;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  will-change: transform;
+  -webkit-animation: dataLogoAnimate 1000ms cubic-bezier(0, 0, 0.58, 1) 1600ms forwards;
+          animation: dataLogoAnimate 1000ms cubic-bezier(0, 0, 0.58, 1) 1600ms forwards; }
+
+@-webkit-keyframes dataLogoAnimate {
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0); } }
+
+@keyframes dataLogoAnimate {
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0); } }
+
+.data-map {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #044061; }
+
+#map {
+  position: absolute;
+  left: -190px;
+  width: 100%;
+  height: 100%; }
+
+.data-box {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  opacity: 0;
+  width: 350px;
+  height: 100%;
+  -webkit-transform: translate3d(100%, 0, 0);
+          transform: translate3d(100%, 0, 0);
+  padding: 25px;
+  -webkit-animation: dataBoxAnimate 1000ms cubic-bezier(0.99, 0.01, 0.62, 0.94) 1600ms forwards;
+          animation: dataBoxAnimate 1000ms cubic-bezier(0.99, 0.01, 0.62, 0.94) 1600ms forwards; }
+
+@-webkit-keyframes dataBoxAnimate {
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0); } }
+
+@keyframes dataBoxAnimate {
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0); } }
+
+.scrollNumber {
+  padding: 15px 0; }
+
+.numberRun-title {
+  margin: 0;
+  font-family: '黑体';
+  font-size: 24px;
+  font-weight: 500;
+  color: #fff; }
+
+.mt-number-animate {
+  color: #fff;
+  font-family: "黑体", sans-serif;
+  line-height: 40px;
+  height: 40px;
+  font-size: 40px;
+  overflow: hidden;
+  display: inline-block;
+  position: relative; }
+
+.mt-number-animate .mt-number-animate-dot {
+  width: 15px;
+  /*设置分割符宽度*/
+  line-height: 40px;
+  float: left;
+  text-align: center; }
+
+.mt-number-animate .mt-number-animate-dom {
+  width: 24px;
+  /*设置单个数字宽度*/
+  text-align: center;
+  float: left;
+  position: relative;
+  top: 0; }
+
+.mt-number-animate .mt-number-animate-dom .mt-number-animate-span {
+  float: left;
+  width: 100%; }
+
+/* VARIABLES */
+/* COLORS */
+/* HELPERS */
+.text-center {
+  text-align: center; }
+
+/* GRID */
+.container {
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
+
+/* PROGRESS */
+.progress {
+  background-color: #e5e9eb;
+  height: 0.25em;
+  position: relative;
+  width: 24em; }
+  .progress-bar {
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    -webkit-animation-name: width;
+            animation-name: width;
+    background-image: -webkit-gradient(linear, left top, right top, from(#4cd964), color-stop(#5ac8fa), color-stop(#007aff), color-stop(#34aadc), color-stop(#5856d6), to(#ff2d55));
+    background-image: -webkit-linear-gradient(left, #4cd964, #5ac8fa, #007aff, #34aadc, #5856d6, #ff2d55);
+    background-image: linear-gradient(to right, #4cd964, #5ac8fa, #007aff, #34aadc, #5856d6, #ff2d55);
+    background-size: 24em 0.25em;
+    height: 100%;
+    position: relative; }
+  .progress-shadow {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#eaecee), to(transparent));
+    background-image: -webkit-linear-gradient(top, #eaecee, transparent);
+    background-image: linear-gradient(to bottom, #eaecee, transparent);
+    height: 4em;
+    position: absolute;
+    top: 100%;
+    -webkit-transform: skew(45deg);
+        -ms-transform: skew(45deg);
+            transform: skew(45deg);
+    -webkit-transform-origin: 0 0;
+        -ms-transform-origin: 0 0;
+            transform-origin: 0 0;
+    width: 100%; }
+
+/* ANIMATIONS */
+@-webkit-keyframes width {
+  0%, 100% {
+    -webkit-transition-timing-function: cubic-bezier(1, 0, 0.65, 0.85);
+            transition-timing-function: cubic-bezier(1, 0, 0.65, 0.85); }
+  0% {
+    width: 0; }
+  100% {
+    width: 100%; } }
+@keyframes width {
+  0%, 100% {
+    -webkit-transition-timing-function: cubic-bezier(1, 0, 0.65, 0.85);
+            transition-timing-function: cubic-bezier(1, 0, 0.65, 0.85); }
+  0% {
+    width: 0; }
+  100% {
+    width: 100%; } }
+
+body,
+html {
+  overflow: hidden; }
+
+.anchorBL {
+  display: none; }

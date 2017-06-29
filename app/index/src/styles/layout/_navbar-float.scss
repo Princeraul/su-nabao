@@ -1,0 +1,80 @@
+.navbar-float {
+	@extend %clearfix;
+
+	position: absolute;
+	top: 60px;
+	left: -80px;
+	display: none;
+	padding: 25px 0 20px 0;
+	background-color: #fff;
+	border-radius: 5px;
+	box-shadow: 0 0 15px rgba(0,0,0,0.4);
+	line-height: 1.5;
+
+	i {
+		position: absolute;
+		top: -35px;
+		left: 50%;
+		overflow: hidden;
+		width: 0;
+		height: 0;
+		margin-left: -11px;
+		border-color: transparent transparent white transparent;
+		border-width: 25px;
+		border-style: solid;
+	}
+
+	h3 {
+		margin: 0 0 5px;
+		color: #195479;
+		font-size: 16px;
+	}
+
+	ul {
+		float: left;
+		margin: 0;
+		min-width: 100px;
+		// padding-left: 50px;
+	}
+
+	li {
+		list-style: none;
+	}
+
+	a {
+		color: $base-text-color;
+		font-size: 14px;
+		text-decoration: none;
+	}
+}
+
+.navbar-float-1 {
+	left: -210px;
+	width: 715px;
+	i {
+		left: 235px;
+	}
+}
+
+.navbar-float-2 {
+	left: -210px;
+	width: 720px;
+	i {
+		left: 245px;
+	}
+}
+
+.navbar-float-3 {
+	left: -210px;
+	width: 770px;
+
+	ul {
+		min-width: auto;
+		padding-left: 40px;
+		// padding: 0 20px;
+	}
+
+	i {
+		left: 245px;
+	}
+}

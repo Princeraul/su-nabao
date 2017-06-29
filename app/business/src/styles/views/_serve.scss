@@ -1,0 +1,253 @@
+.nabao-serve {
+   h3 {
+      font-size: 26px;
+      font-weight: 500;
+      text-align: center;
+   }
+}
+
+.nabao-serve-one {
+   padding: 30px 0;
+   margin-bottom: 15px;
+   text-align: center;
+
+   .nabao-serve-one-img {
+      margin-top: 35px;
+   }
+}
+
+.nabao-serve-three {
+   padding-top: 25px;
+
+   ul {
+      overflow: hidden;
+      margin: 0 -150px 0 85px;
+   }
+
+   li {
+      float: left;
+      margin-right: 150px;
+      list-style: none;
+      text-align: center;
+
+      img{
+         margin-bottom: 5px;
+      }
+   }
+}
+
+.nabao-serve-four {
+   padding-top: 70px;
+
+   img {
+      vertical-align: middle;
+   }
+}
+
+.qudaoinfo {
+
+   h3 {
+      margin-top: 0;
+      margin-bottom: 0;
+      padding-top: 60px;
+      font-size: 32px;
+      font-weight: 500;
+      text-align: center;
+   }
+
+   h4 {
+      margin-top: 0;
+      font-size: 18px;
+      font-weight: 500;
+      text-align: center;
+   }
+
+   .base-box {
+      position: relative;
+   }
+
+   p {
+      position: absolute;
+   }
+
+   .one {
+      top: 350px;
+      left: 360px;
+   }
+
+   .two {
+      top: 350px;
+      left: 610px;
+   }
+
+   .three {
+      top: 350px;
+      left: 875px;
+   }
+}
+
+.qudao-one {
+   width: 100%;
+   height: 550px;
+   margin-top: 20px;
+   background: url(../images/banner5.png) no-repeat;
+   color: white;
+}
+
+.qudao-two {
+   .item {
+      margin: 0;
+   }
+
+   li {
+      width: 450px;
+      float: left;
+      margin-right: 250px;
+      margin-bottom: 60px;
+      list-style: none;
+   }
+
+   .no {
+      margin-right: 0;
+   }
+
+   .pic {
+      display: block;
+      float: left;
+   }
+
+   .txt {
+      margin-left: 80px;
+   }
+
+   b {
+      color: #195479;
+   }
+
+   span {
+      display: block;
+   }
+}
+
+.jiameng {
+   padding-top: 50px;
+   padding-bottom: 40px;
+   background-color: #F8F8F8;
+
+   h3 {
+      padding-top: 0;
+   }
+
+   dl {
+      float: left;
+      width: 330px;
+      padding: 0 20px 30px 20px;
+      margin-right: 30px;
+      background-color: white;
+      text-align: center;
+   }
+
+   dt {
+      margin: 55px 0 30px 0;
+
+      i {
+         display: block;
+         margin: 0 auto;
+      }
+   }
+
+   dd {
+      margin: 0;
+   }
+
+   b {
+      font-weight: 500;
+   }
+
+   .no {
+      margin-right: 0;
+   }
+
+   .clickbtn {
+      display: inline-block;
+      padding: 6px 70px;
+      margin: 20px auto 0;
+      color: #A6A6A6;
+      border-radius: 5px;
+      border: 1px solid #A6A6A6;
+      text-decoration: none;
+   }
+
+   .clickbtn.active {
+      color: #2d97da;
+      border: 1px solid #2d97da;
+   }
+
+   .tit {
+      text-align: center;
+   }
+
+   .btn.active {
+      color: #2d97da;
+      border: 1px solid #2d97da;
+   }
+}
+
+.register {
+   overflow: hidden;
+   width: 100%;
+   height: 500px;
+   background: url(../images/banner6.png) no-repeat;
+
+   h3{
+      margin: 70px 0;
+      color: white;
+      font-size: 26px;
+      font-weight: 500;
+      text-align: center;
+   }
+
+   form {
+      position: relative;
+   }
+
+   p {
+      margin-left: 260px;
+   }
+
+   input,
+   textarea {
+      width: 302px;
+      padding-left: 18px;
+      background-color: rgba(255,255,255,0.7);
+      border: none;
+      border-radius: 5px;
+      color: $base-text-color;
+      font: 14px;
+      line-height: 40px;
+      outline: none;
+   }
+
+   textarea {
+      position: absolute;
+      top: 0;
+      right: 210px;
+      height: 87px;
+      resize: none;
+   }
+
+   .btn {
+      position: absolute;
+      right: 210px;
+      bottom: 0;
+      width: 320px;
+      height: 55px;
+      background-color: #2D97DA;
+      border-radius: 5px;
+      color: white;
+      font-size: 16px;
+      line-height: 55px;
+      text-align: center;
+      text-decoration: none;
+   }
+}

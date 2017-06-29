@@ -1,0 +1,14 @@
+@import "base/normalize";
+@import "views/star";
+@import "views/index";
+@import "views/chinaMapv";
+
+body,
+html {
+	overflow: hidden;
+}
+
+// copyright
+.anchorBL {
+	display: none;
+}

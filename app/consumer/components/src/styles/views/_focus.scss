@@ -1,0 +1,21 @@
+.qrcodesmall-box {
+   height: 100%;
+   background-color: #030A21;
+
+   .focus_bg {
+      position:fixed;
+      z-index: -1;
+   }
+}
+
+.qrcodesmall {
+   width: 300px;
+   height: 140px;
+
+   top: 60%;
+}
+
+.qrcodesmall-line {
+   @include box-background-size(120px, 2px, url('../images/line.png') no-repeat);
+   right: 60px;
+}

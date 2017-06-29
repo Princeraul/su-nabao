@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>饭扫光</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="telephone=no,email=no" name="format-detection">
+    <meta name="viewport" content="width=device-width,user-scalable=yes,minimum-scale=1.0,maximum-scale=1"/>
+	<link rel="stylesheet" href="css/common.min.css">
+	<link rel="stylesheet" href="css/app.min.css">
+</head>
+<body ontouchstart=''>
+	<section class="webview">
+		<img src="images/banner.png" width="100%">
+		<div class="fwsy-bd">您购买的是<b>汾酒·小黑坛</b>正品<font>正品</font>您是第1次扫码。</div>
+		<div class="draw-cot">
+			<input type="text" class="inp-telphone" placeholder="请输入手机号码参与抽奖">
+			<a class="btn-draw" href="javascript:;">立即抽奖</a>
+		</div>
+		<footer class="footer">
+			<a href=""><i></i>防伪溯源</a>
+			<a href="javascript:;" class="toggle-game-cot"><i></i>活动规则</a>
+		</footer>
+		<div class="game-info-dialog">
+			<div class="game-info-cot">
+				<a href="javascript:;" class="colse-game-info-cot toggle-game-cot">X</a>
+				<p class="title">活动规则</p>
+				<div class="scroll">
+					<h3>参与方式：</h3>
+					<p>即日起，凡购买贴有二维码标签的汾酒小黑坛系列产品，扫描瓶身二维码即可参与抽奖活动，<font class="propmt-color">综合中奖率100%。</font></p>
+					<h3>奖品信息：</h3>
+					<p>一等奖       5g金元宝/个</p>
+					<p>二等奖       10g银元宝/个</p>
+					<p>三等奖       1-10元随机红包</p>
+					<h3>实物兑奖方式：</h3>
+					<p>抽中金元宝、银元宝的消费者请及时拨打客
+服热线 <font class="propmt-color">0351-658060</font> 联系工作人员，凭
+手机号和瓶身二维码领取相应奖品”</p>
+					<p>注：红包奖励请在微信公众号中手动领取，实物奖
+励请主动联系活动主办方，本活动最终解释权归 汾
+酒集团小黑坛 所有。</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<script src="http://libs.baidu.com/jquery/1.10.2/jquery.min.js"></script>
+	<script src="js/common.min.js"></script>
+	<script>
+		var $gameEvent = $('.toggle-game-cot');
+		var $gameInfo = $('.game-info-dialog');
+		$gameEvent.on(activate, function() {
+			$gameInfo.toggleClass('game-info-dialog-actvive').find('.game-info-cot').toggleClass('element-active');
+		})
+	</script>
+</body>
+</html>

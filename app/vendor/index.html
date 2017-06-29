@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        * {
+            font-size: 12px;
+            padding: 0;
+            margin: 0;
+        }
+        .Raul-main {
+            position: relative;
+            width: 960px;
+            margin: 0 auto;
+        }
+        .Raul-headertop {
+            position: relative;
+        }
+        .Raul-headertop_language {
+            position: absolute;
+            z-index: 1;
+            top: 10px;
+            right: 10px;
+        }
+        .Raul-headertop_language a {
+            margin-left: 5px;
+            color: #000;
+            text-decoration: none;
+        }
+        .Raul-headertop_language a:hover{
+            color: #005E14;
+        }
+        .Raul-navbar {
+            position: absolute;
+            bottom: -10px;
+            list-style: none;
+        }
+        .Raul-navbar li i,
+        .Raul-navbar li a{
+            height: 54px;
+            background-image: url('sptite.png');
+        }
+        .Raul-navbar li{
+            overflow: hidden;
+            float: left;
+        }
+        .Raul-navbar li i{
+            display: block;
+            float: left;
+            width: 10px;
+            background-position: 0 0;
+
+        }
+        .Raul-navbar li a {
+            display: block;
+            float: left;
+            padding-right: 11px;
+            background-position: right 0;
+            color: #37c948;
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 55px;
+            text-decoration: none;
+        }
+
+        .Raul-navbar li:hover a {
+            background-position: right -52px;
+        }
+
+        .Raul-navbar li:hover i {
+            background-position: 0 -52px;
+        }
+
+        .Raul-navbar li.active a {
+            background-position: right -102px;
+            color: #fff;
+        }
+
+        .Raul-navbar li.active i {
+            background-position: 0 -102px;
+        }
+    </style>
+</head>
+<body>
+    <div class="Raul-main">
+    <div class="Raul-headertop">
+        <div class="Raul-headertop_language">
+            <a href="">English</a>
+            <a href="">Chinese</a>
+            <a href="">japanese</a>
+        </div>
+        <div class="flash"><img src="1.jpeg" alt="" width="100%" height="150px"></div>
+    </div>
+    <ul class="Raul-navbar">
+        <li class="active"><i></i><a href="">nabar1</a></li>
+        <li><i></i><a href="">导航</a></li>
+        <li><i></i><a href="">nabar1</a></li>
+        <li><i></i><a href="">nabar1</a></li>
+        <li><i></i><a href="">nabar1</a></li>
+        <li><i></i><a href="">nabar1</a></li>
+        <li><i></i><a href="">nabar1</a></li>
+        <li><i></i><a href="">nabar1</a></li>
+    </ul>
+    </div>
+
+</body>
+</html>

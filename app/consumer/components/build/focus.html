@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>饭扫光</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta content="yes" name="apple-mobile-web-app-capable">
+	<meta content="yes" name="apple-touch-fullscreen">
+	<meta content="telephone=no,email=no" name="format-detection">
+	<meta name="viewport" content="width=device-width,user-scalable=yes,minimum-scale=1.0,maximum-scale=1" />
+	<link rel="stylesheet" href="css/common.min.css">
+	<link rel="stylesheet" href="css/app.min.css">
+	<style media="screen">
+		body {
+			background-color: #030A21;
+		}
+	</style>
+</head>
+
+<body ontouchstart=''>
+	<article class="webview">
+		<div class="qrcodesmall-box">
+			<img src="images/focus.png" width="100%" height="100%" class="focus_bg">
+			<div class="qrcodesmall">
+				<img src="images/ewm2.png">
+				<div class="qrcodesmall-line"></div>
+			</div>
+			<div class="game-rule toggle-game-cot">活动规则</div>
+		</div>
+		<!-- game-rule-cot -->
+		<section class="game-info-dialog">
+			<div class="game-info-cot">
+				<span href="javascript:;" class="colse-game-info-cot toggle-game-cot">X</span>
+				<div class="game-cot-top"></div>
+				<div class="scroll">
+					<h3>参与方式：</h3>
+					<p>即日起，凡购买贴有二维码标签的畅诺乳酸菌
+					配方的牛奶粉，扫描瓶身二维码即可参与抽奖
+					活动，综合中奖率100%。</p>
+					<h3>活动奖项</h3>
+					<h3>参与方式：</h3>
+					<p>即日起，凡购买贴有二维码标签的畅诺乳酸菌
+					配方的牛奶粉，扫描瓶身二维码即可参与抽奖
+					活动，综合中奖率100%。</p>
+					<h3>活动奖项</h3>
+					<h3>参与方式：</h3>
+					<p>即日起，凡购买贴有二维码标签的畅诺乳酸菌
+					配方的牛奶粉，扫描瓶身二维码即可参与抽奖
+					活动，综合中奖率100%。</p>
+					<h3>活动奖项</h3>
+					<p><img src="images/1.png" width="100%"></p>
+					<p>注：红包奖励请在微信公众号中手动领取，本活动最终解释权由畅诺所有。</p>
+				</div>
+			</div>
+		</section>
+	</article>
+	<script src="http://libs.baidu.com/jquery/1.10.2/jquery.min.js"></script>
+	<script src="js/common.min.js"></script>
+	<script>
+		var $gameEvent = $('.toggle-game-cot');
+		var $gameInfo = $('.game-info-dialog');
+		$gameEvent.on(activate, function() {
+			$gameInfo.toggleClass('game-info-dialog-actvive').find('.game-info-cot').toggleClass('element-active');
+		})
+	</script>
+</body>
+
+</html>

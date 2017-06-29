@@ -1,0 +1,149 @@
+// author: Princeraul
+// email: suliangprinceraul@gmail.com
+// time: 2016-09-14
+@charset 'utf-8';
+// @import 'layout/grid';
+@import 'page-public';
+@import 'list';
+
+img {
+	vertical-align: middle;
+}
+
+
+// 活动规则
+
+.game-rule {
+	position: absolute;
+	bottom: 30px;
+	left: 15px;
+	height: 35px;
+	padding-left: 37px;
+	background: url('../images/icon1.png') left center/ 30px 30px no-repeat;
+	color: #fff;
+	font-size: 16px;
+	line-height: 37px;
+}
+
+// footer
+@include footer();
+
+.footer{
+	a {
+		float: left;
+		width: 50%;
+		line-height: 1;
+
+		i {
+			display: block;
+			margin: 5px auto 3px;
+		}
+
+		&:nth-of-type(1) i {
+			@include box-background-size(44px, 43px, url('../images/icon-fw.png') no-repeat);
+		}
+
+		&:nth-of-type(2) i {
+			@include box-background-size(44px, 43px, url('../images/icon-hd.png') no-repeat);
+		}
+	}
+}
+
+.fwsy-bd {
+	margin-top: 10px;
+	margin-bottom: 20px;
+	color: $yellow;
+	font-size: 14px;
+	text-align: center;
+}
+
+.game-info {
+	position: relative;
+	margin-top: 30px;
+	color: #004abb;
+
+	span{
+		position: absolute;
+		right: 7%;
+		background: url(../images/icon.png) no-repeat;
+		background-size: 32px;
+		padding-left: 36px;
+		line-height: 32px;
+	}
+}
+
+// 饭扫光 活动介绍
+.game-info-dialog {
+	@extend %bottom-view;
+	z-index: z('below');
+	opacity: 0;
+	transition: all 0.2s;
+
+	.game-info-cot {
+		@extend %translate-absolute-center;
+
+		box-sizing: border-box;
+		opacity: 0;
+		visibility: hidden;
+		width: 90%;
+		max-width: 700px;
+		border-radius: 8px;
+		background-color: #fff;
+		transform: translate(-50%, -50%) scale(0);
+		transition: all 0.2s;
+
+		.game-cot-top {
+			@include box-background-size(554px, 292px, url('../images/top.png') no-repeat);
+			position: absolute;
+			top: -92px;
+			left: -25px;
+		}
+
+		.scroll {
+			overflow-y: scroll;
+			-webkit-overflow-scrolling : touch;
+			min-height: 140px;
+			max-height: 200px;
+			padding-bottom: 10px;
+			margin-top: 60px;
+		}
+
+		h3 {
+			padding: 0 15px;
+			margin: 0  0 3px;
+			color: $red;
+			font-size: 16px;
+		}
+
+		p {
+			padding: 0 15px;
+			margin: 0 0 10px;
+			font-size: 16px;
+		}
+
+
+		.colse-game-info-cot {
+			position: absolute;
+			right: -16px;
+			top: -16px;
+			width: 32px;
+			height: 32px;
+			background-color: $red;
+			border-radius: 100%;
+			color: $white;
+			text-align: center;
+			line-height: 32px;
+			text-decoration: none;
+		}
+	}
+
+	.game-info-cot.element-active {
+		@extend %scaleactive;
+		z-index: z('shoryuken');
+	}
+}
+
+.game-info-dialog.game-info-dialog-actvive {
+	z-index: z('default');
+	opacity: 1;
+}

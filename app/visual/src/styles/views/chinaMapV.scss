@@ -1,0 +1,198 @@
+.mapV {
+	position: relative;
+   width: 100%;
+   height: 100%;
+}
+
+.data-logo {
+   position: absolute;
+   z-index: 1;
+   top: 25px;
+   left: 25px;
+   opacity: 0;
+   width: 306px;
+   height: 72px;
+   background: url('../images/logo2.png') no-repeat;
+   transform: translateY(-50%);
+   will-change: transform;
+   animation: dataLogoAnimate 1000ms cubic-bezier(0, 0, .58, 1)1600ms forwards;
+}
+
+@keyframes dataLogoAnimate {
+   to {
+      opacity: 1;
+      transform: translateY(0);
+   }
+}
+
+.data-map {
+   position: absolute;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: #044061;
+}
+
+#map {
+   position: absolute;
+   left: -190px;
+	width: 100%;
+	height: 100%;
+}
+
+.data-box {
+   position: absolute;
+   z-index: 2;
+   top: 0;
+   right: 0;
+   opacity: 0;
+   width: 350px;
+   height: 100%;
+   // background-color: rgba(0, 0, 0, 0.2);
+   transform: translate3d(100%, 0, 0);
+   padding: 25px;
+   animation: dataBoxAnimate 1000ms cubic-bezier(0.99, 0.01, 0.62, 0.94) 1600ms  forwards;
+}
+
+@keyframes dataBoxAnimate {
+   to {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+   }
+}
+
+.scrollNumber {
+   padding: 15px 0;
+}
+
+.numberRun-title {
+   margin: 0;
+   font-family: '黑体';
+   font-size: 24px;
+   font-weight: 500;
+   color: #fff;
+}
+
+// 数字滚动
+.mt-number-animate {
+   color: #fff;
+	font-family: "黑体", sans-serif;
+	line-height: 40px;
+	height: 40px;
+	font-size: 40px;
+	overflow: hidden;
+	display: inline-block;
+	position: relative;
+}
+
+.mt-number-animate .mt-number-animate-dot {
+	width: 15px;
+	/*设置分割符宽度*/
+	line-height: 40px;
+	float: left;
+	text-align: center;
+}
+
+.mt-number-animate .mt-number-animate-dom {
+   width: 24px;
+	/*设置单个数字宽度*/
+	text-align: center;
+	float: left;
+	position: relative;
+	top: 0;
+}
+
+.mt-number-animate .mt-number-animate-dom .mt-number-animate-span {
+   float: left;
+	width: 100%;
+}
+/* VARIABLES */
+
+$progress-width: 24em;
+$progress-height: .25em;
+
+$font-family: 'Helvetica Neue';
+$font-family-fallback: sans-serif;
+$font-size: 1em;
+$font-weight: 300;
+
+$line-height: 1.5em;
+
+$font-weight-headings: 100;
+
+$h1-font-size: 2.25em;
+
+/* COLORS */
+
+$color: #6c6c6c;
+$color-bg: #f5f7f9;
+$color-progress-bg: #e5e9eb;
+
+$color-green: #4cd964;
+$color-turquoise: #5ac8fa;
+$color-blue: #007aff;
+$color-light-blue: #34aadc;
+$color-purple: #5856d6;
+$color-red: #ff2d55;
+
+/* HELPERS */
+
+.text-center {
+  text-align: center;
+}
+
+/* GRID */
+
+.container {
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* PROGRESS */
+
+.progress {
+  background-color: $color-progress-bg;
+  height: $progress-height;
+  position: relative;
+  width: $progress-width;
+
+  &-bar {
+    animation-duration: 3s;
+    animation-name: width;
+    background-image: linear-gradient(to right, $color-green, $color-turquoise, $color-blue, $color-light-blue, $color-purple, $color-red);
+    background-size: $progress-width $progress-height;
+    height: 100%;
+    position: relative;
+  }
+
+  &-shadow {
+    background-image: linear-gradient(to bottom, #eaecee, transparent);
+    height: 4em;
+    position: absolute;
+    top: 100%;
+    transform: skew(45deg);
+    transform-origin: 0 0;
+    width: 100%;
+  }
+
+}
+
+/* ANIMATIONS */
+
+@keyframes width {
+
+  0%, 100% {
+    transition-timing-function: cubic-bezier(1, 0, .65, .85);
+  }
+
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 100%;
+  }
+
+}

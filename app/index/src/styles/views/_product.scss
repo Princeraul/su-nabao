@@ -1,0 +1,283 @@
+.nabao-product {
+   padding: 20px 0;
+
+   h3 {
+      margin-bottom: 5px;
+      font-size: 28px;
+      font-weight: 500;
+      text-align: center;
+   }
+
+   h4 {
+      margin-top: 0;
+      margin-bottom: 60px;
+      color: #777;
+      font-size: 20px;
+      font-weight: 500;
+      text-align: center;
+   }
+
+   ul {
+      margin: 0;
+      li {
+         float: left;
+         width: 215px;
+         margin: 0 30px;
+         color: #777;
+         font-size: 16px;
+         text-align: center;
+         list-style: none;
+      }
+
+      span {
+         display: block;
+         min-height: 150px;
+         margin: 0 auto 20px;
+         background-repeat: no-repeat;
+      }
+
+      h3 {
+         font-size: 20px;
+         font-weight: 500;
+      }
+
+      a {
+         color: $base-text-color;
+         text-decoration: none;
+      }
+   }
+}
+
+.ide {
+   background-color: #195479;
+
+   .ide-bg {
+      float: left;
+      padding-top:20px;
+   }
+
+   .hd {
+      padding-top: 70px;
+   }
+
+   i {
+      display: block;
+      overflow: hidden;
+      width: 0;
+      height: 0;
+      margin:  auto;
+      border-color: white transparent  transparent transparent;
+      border-style: solid;
+      border-width: 15px;
+   }
+
+   .qrcode-info-navbar {
+      float: left;
+      width: 150px;
+      margin: 0 130px 0 40px;
+      dl {
+         margin: 0;
+      }
+
+      a {
+         position: relative;
+         display: inline-block;
+         padding-right: 10px;
+         margin-bottom: 3px;
+         line-height: 30px;
+         color: #fff;
+         cursor: pointer;
+         text-decoration: none;
+
+         &:hover,
+         &.selected {
+            color: #fb8582;
+         }
+      }
+
+      i {
+         display: none;
+      }
+
+      .active {
+         background-color: #fb8582;
+         color: #195479;
+         text-indent: 10px;
+
+         i {
+            display: block;
+            position: absolute;
+            top: 0;
+            right: -30px;
+            border-color: transparent  transparent transparent #fb8582;
+            border-style: solid;
+            border-width: 15px;
+         }
+
+         &:hover {
+            color: #195479;
+         }
+      }
+
+      .dl2 {
+         margin-top: 40px;
+
+         small {
+            padding-left: 10px;
+            color: #2887c2;
+
+         }
+
+         .active {
+            background-color: #257bb1;
+            color: #195479;
+
+            i {
+               border-color: transparent  transparent transparent #257bb1;
+            }
+
+            &:hover {
+               color: #195479;
+            }
+         }
+
+         a {
+            color: #2887c2;
+
+            &:hover {
+               color: #31a4ec;
+            }
+         }
+      }
+   }
+
+   .qrcode-indfo-img {
+      float: left;
+      height: 474px;
+      margin-top: 50px;
+   }
+
+   .tabimg {
+      display: none;
+   }
+   .tabimg.active {
+      display: block;
+   }
+}
+
+.oneqrcode {
+   padding-bottom: 0;
+
+   h4 {
+      margin-bottom: 20px;
+   }
+}
+
+.nabao-product-three {
+   position: relative;
+
+   .three-img {
+
+   }
+   .info {
+      position: absolute;
+      top: 210px;
+      right: 150px;
+      width: 285px;
+      height: 285px;
+      background: url(../images/p12.jpg) no-repeat;
+
+      p {
+         position: absolute;
+      }
+
+      .info-p1 {
+         top: 40px;
+         left: -190px;
+      }
+
+      .info-p2 {
+         top: 40px;
+         right: -190px;
+      }
+      .info-p3 {
+         top: 180px;
+         left: -160px;
+      }
+      .info-p4 {
+         top: 180px;
+         right: -190px;
+      }
+   }
+}
+
+.nabao-product-scroll {
+   overflow: hidden;
+   width: 100%;
+   height: 460px;
+   padding-top: 90px;
+   background: url(../images/banner2.png) no-repeat;
+   line-height: 1.5;
+
+   .scroll-img {
+      float: right;
+      margin-right: 30px;
+   }
+
+   .product-scroll-text {
+      padding-left: 30px;
+      color: white;
+   }
+
+   h3 {
+      margin-bottom: 10px;
+      font-size: 24px;
+      font-weight: 500;
+   }
+
+   small {
+      font-size: 16px;
+      border-bottom: 1px solid white;
+   }
+
+   p {
+      position: relative;
+      font-size: 14px;
+
+      span {
+         display: inline-block;
+         line-height: 1.3;
+         vertical-align: top;
+      }
+   }
+}
+
+.example h4 {
+   margin-bottom: 40px;
+}
+
+.nabao-product .list-example{
+   overflow: hidden;
+   padding-bottom: 30px;
+   padding-left: 0;
+   margin: 0;
+
+   li {
+      list-style: none;
+      float: left;
+      width: auto;
+      padding: 2px 17px;
+      margin-left: 0;
+      margin-right: 45px;
+      margin-bottom: 30px;
+      border: 1px solid #d3dad9;
+   }
+
+   li.no {
+      margin-right: 0;
+   }
+}
+
+.qudao .pic {
+   height: 170px;
+}
